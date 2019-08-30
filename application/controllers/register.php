@@ -63,6 +63,15 @@ class Register extends MY_Controller
         else
         {
           $client_attr['is_active']     = $_POST['is_active'];
+          $client_attr['command']     = $_POST['command'];
+          $client_attr['command_city']     = $_POST['command_city'];
+          $client_attr['command_opm']     = $_POST['command_opm'];
+          $client_attr['command_address']     = $_POST['command_address'];
+          $client_attr['command_phone']     = $_POST['command_phone'];
+          $client_attr['command_board']     = $_POST['command_board'];
+          $client_attr['command_state']     = $_POST['command_state'];
+          $client_attr['command_entry_date']     = $_POST['command_entry_date'];
+          $client_attr['command_comments']     = $_POST['command_comments'];
         }
         $client_attr['email']     = $_POST['email'];
         $client_attr['rg']        = $_POST['rg'];

@@ -317,6 +317,17 @@ $lang['application_companies'] = "Todos os sócios";
 $lang['application_add_new_company'] = "Adicionar novo sócio";
 $lang['application_edit_company'] = "Editar sócios";
 $lang['application_firstname'] = "Nome";
+
+$lang['application_command'] = "Comando";
+$lang['application_command_city'] = "Cidade";
+$lang['application_command_opm'] = "OPM";
+$lang['application_command_address'] = "Endereço";
+$lang['application_command_phone'] = "Telefone";
+$lang['application_command_board'] = "Quadro";
+$lang['application_command_state'] = "Estado";
+$lang['application_command_entry_date'] = "Data de Ingresso";
+$lang['application_comments'] = "Observações";
+
 $lang['application_i_am_active'] = "Estou ativo";
 $lang['application_lastname'] = "Sobrenome";
 $lang['application_functional_id'] = "ID Funcional";

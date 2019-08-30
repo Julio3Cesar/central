@@ -122,10 +122,44 @@
       <div class="row">
         <div id="formToActive" style="display:none">
           <div class="col-md-6">
--
+            <div class="form-group">
+                <label for="command"><?=$this->lang->line('application_command');?></label>
+                <input id="command" type="text" name="command" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command'];}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_city"><?=$this->lang->line('application_command_city');?></label>
+                <input id="command_city" type="text" name="command_city" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_city'];}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_opm"><?=$this->lang->line('application_command_opm');?></label>
+                <input id="command_opm" type="text" name="command_opm" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_opm'];}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_address"><?=$this->lang->line('application_command_address');?></label>
+                <input id="command_address" type="text" name="command_address" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_address'];}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_phone"><?=$this->lang->line('application_command_phone');?></label>
+                <input id="command_phone" type="text" name="command_phone" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_phone'];}?>" />
+            </div>
           </div>
           <div class="col-md-6">
--
+            <div class="form-group">
+                <label for="command_board"><?=$this->lang->line('application_command_board');?></label>
+                <input id="command_board" type="text" name="command_board" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_board'];}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_state"><?=$this->lang->line('application_command_state');?></label>
+                <input id="command_state" type="text" name="command_state" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_state'];}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_entry_date"><?=$this->lang->line('application_command_entry_date');?></label>
+                <input id="command_entry_date" type="text" name="command_entry_date" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_entry_date'];}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_comments"><?=$this->lang->line('application_command_comments');?></label>
+                <textarea id="command_comments" rows="5" name="command_comments" class="form-control" value="<?php if(isset($registerdata)){echo $registerdata['command_comments'];}?>"></textarea>
+            </div>
           </div>
         </div>
       </div>
