@@ -3,25 +3,39 @@ $.ajaxSetup ({
     cache: false
 });
 
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("isActive");
+  // Get the output text
+  var text = document.getElementById("formToActive");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
 // Support for AJAX loaded modal window.
-// Focuses on first input textbox after it loads the window. 
+// Focuses on first input textbox after it loads the window.
 function modalfunc(){
 $('[data-toggle="mainmodal"]').bind('click',function(e) {
   NProgress.start();
   e.preventDefault();
   var url = $(this).attr('href');
- 
+
   if (url.indexOf('#') === 0) {
     $('#mainModal').modal('open');
   } else {
-    $.get(url, function(data) { 
+    $.get(url, function(data) {
                         $('#mainModal').modal();
                         $('#mainModal').html(data);
 
-                        
+
     }).success(function() { NProgress.done();  });
   }
-}); 
+});
 }
 modalfunc();
 //Ajax loaded content
@@ -31,36 +45,36 @@ $(document).on("click", '.ajax', function (e) {
 
   $(".message-list ul.list-striped li").removeClass('active');
   $(this).parent().addClass('active');
-  
+
   //$("html, body").animate({ scrollTop: 0 }, 600);
   var url = $(this).attr('href');
   if (url.indexOf('#') === 0) {
-    
+
   } else {
-    $.get(url, function(data) { 
+    $.get(url, function(data) {
                         $('#ajax_content').html(data);
                         $(".message_content:gt(1)").hide();
                         $('#ajax_content').velocity("transition.fadeIn");
-    }).success(function() { 
-            $(".message_content:gt(1)").velocity("transition.fadeIn");  
-            
-            $(".scroll-content").mCustomScrollbar({theme:"dark-2"}); 
-            NProgress.done(); 
+    }).success(function() {
+            $(".message_content:gt(1)").velocity("transition.fadeIn");
+
+            $(".scroll-content").mCustomScrollbar({theme:"dark-2"});
+            NProgress.done();
         });
   }
-}); 
+});
 
 //Ajax background load
   $(document).on("click", '.ajax-silent', function (e) {
   e.preventDefault();
   NProgress.start();
   var url = $(this).attr('href');
-  
-    $.get(url, function(data) { 
-                        
+
+    $.get(url, function(data) {
+
     }).success(function() { $('.message-list ul li a').first().click(); NProgress.done(); });
-  
-}); 
+
+});
 
           //button loaded on click
         $(document).on("click", '.button-loader', function (e) {
@@ -71,25 +85,25 @@ $(document).on("click", '.ajax', function (e) {
 
   //Ajax background load
   $(document).on("change", '.description-setter', function (e) {
-  
+
   var itemid = $(this).val();
   var description = $("#item"+itemid).html();
   $("#description").val(description);
 
-  
-}); 
+
+});
 
   //Ajax background load
   $(document).on("change", '.task-check', function (e) {
   e.preventDefault();
   NProgress.start();
   var url = $(this).data('link');
-  
-    $.get(url, function(data) { 
-                        
+
+    $.get(url, function(data) {
+
     }).success(function() { NProgress.done(); });
-  
-}); 
+
+});
 
 //message list delete item
 $(document).on("click", '.message-list-delete', function (e) {
@@ -99,7 +113,7 @@ $(document).on("click", '.message-list-delete', function (e) {
                  $(this).remove(); //then remove from the DOM
              });
          });
-});  
+});
 
 
 
@@ -107,15 +121,15 @@ $(document).on("click", '.message-list-delete', function (e) {
 //message reply
 
 $(document).on("click", '#reply', function (e) {
- 
- $("#reply").velocity({'height': '240px'}, {queue: false, complete: function(){ 
+
+ $("#reply").velocity({'height': '240px'}, {queue: false, complete: function(){
     $('#reply').wysihtml5({"size": 'small'});
     $('.reply #send').fadeIn('slow');
 
     } });
 
 
-}); 
+});
 $(".nano").nanoScroller();
 
 
@@ -124,10 +138,10 @@ $(".nano").nanoScroller();
   $(document).on("click", '.ajaxform #send', function (e) {
 
     var content = $('textarea[name="message"]').html($('#reply').code());
-    var url = $(this).closest('form').attr('action'); 
+    var url = $(this).closest('form').attr('action');
     var active = $(this);
     var formData = new FormData($(this).closest('form')[0]);
-     
+
     if($('textarea[name="message"]').val() === ""){
       $('.comment-content .note-editable').css("border-top", "2px solid #D43F3A");
 
@@ -147,9 +161,9 @@ $(".nano").nanoScroller();
            {
 
                $('#message-list li.active').click().click();
-              
+
                $(".ajaxform #send").html('<i class="fa fa-check-circle-o"></i>');
-              
+
                   $('.message-content-reply, #timeline-comment').slideUp('slow').velocity(
                     { opacity: 0 },
                     { queue: false, duration: 'slow' }
@@ -160,21 +174,21 @@ $(".nano").nanoScroller();
                      $('#'+reload).load(document.URL + ' #'+reload, function() {
                          $('#'+reload+' ul li:nth-child(2) .timeline-panel').addClass("highlight");
                          $('#'+reload+' ul li:nth-child(2) .timeline-panel').delay("5000").removeClass("highlight");
-                         
+
                         summernote();
-                     }); 
-                     
+                     });
+
                  }
-                 
-                
+
+
            },
            error: function(data)
            {
-            
+
                $('#message-list li.active').click().click();
-               
+
                $(".ajaxform #send").html('<i class="fa fa-check-circle-o"></i>');
-              
+
                   $('.message-content-reply, #timeline-comment').slideUp('slow').velocity(
                     { opacity: 0 },
                     { queue: false, duration: 'slow' }
@@ -185,13 +199,13 @@ $(".nano").nanoScroller();
                      $('#'+reload).load(document.URL + ' #'+reload, function() {
                          $('#'+reload+' ul li:nth-child(2) .timeline-panel').addClass("highlight");
                          $('#'+reload+' ul li:nth-child(2) .timeline-panel').delay("5000").removeClass("highlight");
-                         
+
                         summernote();
-                     }); 
-                     
+                     });
+
                  }
-                 
-                
+
+
            }
          }); }
 
@@ -203,9 +217,9 @@ $(document).on("click", '.section-reload #send', function (e) {
     e.preventDefault();
     NProgress.start();
     $('#tasks-tab').load(document.URL +  ' #tasks-tab');
-    
+
       NProgress.done();
-     
+
 });
 
 
@@ -214,37 +228,37 @@ $(document).on("click", '.section-reload #send', function (e) {
     e.stopPropagation();
     e.preventDefault();
     var content = $('textarea.summernote-modal').html($('#mainModal .note-editable').code());
-    var url = $(this).closest('form').attr('action'); 
+    var url = $(this).closest('form').attr('action');
     var active = $(this);
     var data = new FormData($(this).closest('form')[0]);
-   
+
     $.ajax({
            type: "POST",
            url: url,
            mimeType: "multipart/form-data",
            contentType: false,
            cache: false,
-           processData: false, 
+           processData: false,
            data: data,
            success: function(data, textStatus, jqXHR)
            {
  if(typeof data.error === 'undefined')
             {
-                
+
             }
             else
             {
-               
+
                 console.log('ERRORS: ' + data.error);
             }
                  var reload = active.closest('form').data('reload');
                  if(reload) {
                      $('#'+reload).velocity("transition.slideDownOut");
                      $('#'+reload).load(document.URL + ' #'+reload, function(data) {
-                        
+
                          $('#'+reload + ' .checkbox-nolabel').labelauty({ label: false });
                          modalfunc();
-                         $('#'+reload).velocity("transition.slideUpIn"); 
+                         $('#'+reload).velocity("transition.slideUpIn");
                          keepmodal = active.data('keepmodal');
                          if(keepmodal === undefined){
                             $('#mainModal').modal('hide');
@@ -254,22 +268,22 @@ $(document).on("click", '.section-reload #send', function (e) {
                           }
                           var value = active.text().replace('<i class="fa fa-spinner fa-spin"></i> ', '');
                           active.html(value);
-                        
-                     }); 
-                     
+
+                     });
+
                  }
-                  
+
            },
            error: function(formData)
            {
-              
+
               var reload = active.closest('form').data('reload');
                  if(reload) {
                      $('#'+reload).velocity("transition.slideDownOut");
                      $('#'+reload).load(document.URL + ' #'+reload, function(data) {
-                        
+
                          $('#'+reload + ' .checkbox-nolabel').labelauty({ label: false });
-                         $('#'+reload).velocity("transition.slideUpIn"); 
+                         $('#'+reload).velocity("transition.slideUpIn");
                          keepmodal = active.data('keepmodal');
                          if(keepmodal === undefined){
                             $('#mainModal').modal('hide');
@@ -279,11 +293,11 @@ $(document).on("click", '.section-reload #send', function (e) {
                           }
                           var value = active.text().replace('<i class="fa fa-spinner fa-spin"></i> ', '');
                           active.html(value);
-                        
-                     }); 
-                     
+
+                     });
+
                  }
-                
+
            }
          });
 
@@ -295,7 +309,7 @@ $(document).on("click", '.section-reload #send', function (e) {
 $(document).on("click", '.note-form #send', function (e) {
 var button = this;
 var content = $('textarea[name="note"]').html($('#textfield').code());
-    var url = $(this).closest('form').attr('action'); 
+    var url = $(this).closest('form').attr('action');
     var note = $(this).closest('form').serialize();
 
     $.ajax({
@@ -307,11 +321,11 @@ var content = $('textarea[name="note"]').html($('#textfield').code());
             var value = $( button ).text();
             var str = value.replace('<i class="fa fa-spinner fa-spin"></i> ', "");
             $(button).html(str);
-             $('#changed').velocity("transition.fadeOut"); 
+             $('#changed').velocity("transition.fadeOut");
            },
            error: function(data)
            {
-            
+
             var value = $( button ).text();
             var str = value.replace('<i class="fa fa-spinner fa-spin"></i> ', "");
             $(button).html(str);
@@ -320,14 +334,14 @@ var content = $('textarea[name="note"]').html($('#textfield').code());
          });
 
     return false;
-  
-}); 
+
+});
 $(document).on("focus", '#_notes .note-editable', function (e) {
 $('#changed').velocity("transition.fadeIn");
-}); 
+});
 $(document).on("click", '#_notes .addtemplate', function (e) {
 $('#changed').velocity("transition.fadeIn");
-}); 
+});
 
 
 
@@ -349,12 +363,12 @@ $('.to_modal').click(function(e) {
 
 //Clickable rows
 	$(document).on("click", 'table#projects td, table#clients td, table#invoices td, table#cprojects td, table#cinvoices td, table#estimates td, table#cestimates td, table#quotations td, table#messages td, table#cmessages td, table#subscriptions td, table#csubscriptions td, table#tickets td, table#ctickets td', function (e) {
-	    
+
       var id = $(this).parent().attr("id");
 	    if(id && !$(this).hasClass("noclick")){
 	   		var site = $(this).closest('table').attr("rel")+$(this).closest('table').attr("id");
 	    	if(!$(this).hasClass('option')){window.location = site+"/view/"+id;}
-	    } 
+	    }
   	});
       $(document).on("click", 'table#media td', function (e) {
 	    var id = $(this).parent().attr("id");
@@ -380,7 +394,7 @@ $('.to_modal').click(function(e) {
 
 
 
-    
+
       /* -------------- Summernote WYSIWYG Editor ------------- */
          function summernote(){
               $('.summernote').summernote({
@@ -412,13 +426,13 @@ $('.to_modal').click(function(e) {
               ['color', ['color']],
               ['para', ['ul', 'ol', 'paragraph']],
               ['height', ['height']],
-              
+
             ]
           });
           var postForm = function() {
             var content = $('textarea[name="note"]').html($('#textfield').code());
           }
-        
+
           $('.summernote-big').summernote({
             height:"450px",
             shortcuts: false,
@@ -430,11 +444,11 @@ $('.to_modal').click(function(e) {
               ['color', ['color']],
               ['para', ['ul', 'ol', 'paragraph']],
               ['height', ['height']],
-              
+
             ]
           });
 
-        
+
 
       /* -------------- Summernote WYSIWYG Editor ------------- */
 
@@ -443,15 +457,15 @@ $('.to_modal').click(function(e) {
       $(".chosen-select").chosen({disable_search_threshold: 4, width: "100%"});
 
 
-      //notify 
-      
+      //notify
+
       $('.notify').velocity({
             opacity: 1,
             right: "10px",
           }, 800, function() {
             $('.notify').delay( 3000 ).fadeOut();
           });
-      
+
 
       // List striped
       $("ul.striped li:even").addClass("listevenitem");
@@ -459,15 +473,15 @@ $('.to_modal').click(function(e) {
       //Custom Scrollbar
       $(".scroll-content").mCustomScrollbar({theme:"dark-2"});
       $(".scroll-content-2").mCustomScrollbar({theme:"dark-2"});
-      
+
       //Form validation
       $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
 
       $('.use-tooltip').tooltip();
        $('.tt').tooltip();
-       
+
       $('.po').popover({html:true});
-      
+
         //change comma to point
         $(document).on("change", '.comma-to-point', function (e) {
           var str = $(this).val().replace(",", ".");
@@ -480,15 +494,15 @@ $('.to_modal').click(function(e) {
       $(document).on("click", '.po-delete', function (e) {
           $(this).closest('tr').velocity("transition.slideRightOut");
       });
-       
+
        $('.date-picker').datepicker();
         $('#timepicker1').timepicker({
           minuteStep: 1,
           showSeconds: true,
           showMeridian: false
         });
-        
-        /* 
+
+        /*
         $('.colorpicker').colorpicker();
         $('.colorpicker input').click(function() {
           $(this).parents('.colorpicker').colorpicker('show');
@@ -508,7 +522,7 @@ $('.to_modal').click(function(e) {
           }else{
             $( "#slider-range" ).slider( "option", "disabled", true );
           }
-          
+
         });
 
 
@@ -537,7 +551,7 @@ $('.to_modal').click(function(e) {
         //field disable switcher
         $(document).on("change", '.switcher', function (e) {
           var fieldID = $(this).data('switcher');
-          
+
           if($(this).val() == "" || $(this).val() == "0"){
             $('#'+fieldID).attr("disabled", true);
             $('#'+fieldID).val('0');
@@ -553,7 +567,7 @@ $('.to_modal').click(function(e) {
         $(document).on("change", '.getProjects', function (e) {
           var fieldID = $(this).data('destination');
           var selectedValue = $(this).val();
-          
+
           if(selectedValue == "" || selectedValue == "0"){
             $('#'+fieldID+' optgroup').attr("disabled", true);
             $('#'+fieldID).val('0');
@@ -568,10 +582,10 @@ $('.to_modal').click(function(e) {
         });
 
 
-        
+
         //on todo-checkbox click
          $(document).on("click", '.todo-checkbox', function (e) {
-             
+
            var url = $(this).data('link');
            //$(this).attr("checked");
            if($(this).closest('li').hasClass("done")){
@@ -579,17 +593,17 @@ $('.to_modal').click(function(e) {
            }else{
                $(this).closest('li').addClass("done");
            }
-            $.get(url, function(data) { 
-                                
+            $.get(url, function(data) {
+
             }).success(function() {  });
-             
-        
+
+
         });
         //on todo click
          $(document).on("click", '.todo li p.name', function (e) {
-           
+
                 $(this).closest("li").toggleClass( "slidedown" );
-        
+
         });
 
         //message reply slide down
@@ -662,7 +676,7 @@ $('.to_modal').click(function(e) {
         var action = $("#bulk-form").attr('action');
         $("#bulk-form").attr('action', action+$(this).data("action"));
         $('#bulk-form').submit();
-        
+
       });
 
       //bulk action setter
@@ -692,12 +706,12 @@ function sortList() { var mylist = $('ul.sortlist');
   })
   $.each(listitems, function(idx, itm) { mylist.append(itm); });
 }
-        
-        
+
+
 
 function startTimer(starttime) {
   $("#timer").timer({
-  action: 'start', 
+  action: 'start',
   seconds: starttime
   });
 }

@@ -49,6 +49,21 @@ class Register extends MY_Controller
         }
         $lastclient               = Client::last();
         $client_attr              = array();
+        $client_attr['functional_id']     = $_POST['functional_id'];
+        $client_attr['authenticity_code']     = $_POST['authenticity_code'];
+        $client_attr['station']     = $_POST['station'];
+        $client_attr['birth_date']     = $_POST['birth_date'];
+        $client_attr['address_number']     = $_POST['address_number'];
+        $client_attr['district']     = $_POST['district'];
+        $client_attr['complement']     = $_POST['complement'];
+        if ($_POST['is_active'] == null)
+        {
+          $client_attr['is_active']     = 0;
+        }
+        else
+        {
+          $client_attr['is_active']     = $_POST['is_active'];
+        }
         $client_attr['email']     = $_POST['email'];
         $client_attr['rg']        = $_POST['rg'];
         $client_attr['firstname'] = $_POST['firstname'];

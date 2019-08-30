@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @file        Login View
  * @author      Luxsys <support@luxsys-apps.com>
@@ -17,12 +17,12 @@
     <META Http-Equiv="Pragma" Content="no-cache">
     <META Http-Equiv="Expires" Content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title><?=$core_settings->company;?></title>
-    
+
     <link href="<?=base_url()?>assets/blueline/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=base_url()?>assets/blueline/css/blueline.css" rel="stylesheet">
-    <link href="<?=base_url()?>assets/blueline/css/user.css" rel="stylesheet" /> 
+    <link href="<?=base_url()?>assets/blueline/css/user.css" rel="stylesheet" />
     <script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Open+Sans:400italic,400,300,600,700:latin' ] }
@@ -57,6 +57,7 @@
     <?php } ?>
     <script src="<?=base_url()?>assets/blueline/js/plugins/jquery-1.11.0.min.js"></script>
     <script src="<?=base_url()?>assets/blueline/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/blueline/js/blueline.js"></script>
     <script type="text/javascript" src="<?=base_url()?>assets/blueline/js/plugins/velocity.min.js"></script>
     <script type="text/javascript" src="<?=base_url()?>assets/blueline/js/plugins/velocity.ui.min.js"></script>
     <script type="text/javascript" src="<?=base_url()?>assets/blueline/js/plugins/validator.min.js"></script>
@@ -65,12 +66,12 @@
               $("form").validator();
             //$(".form-signin").delay(400).addClass("slidein");
             $(".form-signin").velocity("transition.flipYIn", { delay: 400});
-           
+
                 <?php if($error == "true") { ?>
-                    $("#error").velocity("transition.slideDownIn", { delay: 900});  
+                    $("#error").velocity("transition.slideDownIn", { delay: 900});
                 <?php } ?>
 
-                //notify 
+                //notify
             $('.notify').velocity({
                   opacity: 1,
                   right: "10px",
@@ -81,8 +82,8 @@
 
              });
 
-            
-        </script> 
+
+        </script>
 
   </body>
 </html>

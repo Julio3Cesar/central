@@ -108,15 +108,35 @@
       ?>
     </div>
   </div>
-
-  <hr>
+  <div class="col-md-12">
+    <div class="row">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="isActive"><?=$this->lang->line('application_i_am_active');?></label>
+            &nbsp;
+            <input type="checkbox" id="isActive" name="is_active" style="margin-bottom: 4px;"class="checkbox-inline" onclick="myFunction()" value="1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="formToActive" style="display:none">
+          <div class="col-md-6">
+-
+          </div>
+          <div class="col-md-6">
+-
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-6">
-           <a href="<?=site_url("login");?>"><?=$this->lang->line('application_go_to_login');?></a>
+       <a href="<?=site_url("login");?>"><?=$this->lang->line('application_go_to_login');?></a>
     </div>
     <div class="col-md-6">
-
-           <input type="submit" class="btn btn-success" value="<?=$this->lang->line('application_send');?>" />
+       <input type="submit" class="btn btn-success" value="<?=$this->lang->line('application_send');?>" />
     </div>
   </div>
 <?=form_close()?>

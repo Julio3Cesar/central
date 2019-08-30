@@ -317,6 +317,7 @@ $lang['application_companies'] = "Todos os sócios";
 $lang['application_add_new_company'] = "Adicionar novo sócio";
 $lang['application_edit_company'] = "Editar sócios";
 $lang['application_firstname'] = "Nome";
+$lang['application_i_am_active'] = "Estou ativo";
 $lang['application_lastname'] = "Sobrenome";
 $lang['application_functional_id'] = "ID Funcional";
 $lang['application_authenticity_code'] = "Código de Autenticidade";
