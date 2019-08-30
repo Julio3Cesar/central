@@ -1,0 +1,4 @@
+
+Host de FTP: ftp.kingyotemakeria.com.br	
+Usuário de FTP: kingyotemakeria
+Senha: Senai115

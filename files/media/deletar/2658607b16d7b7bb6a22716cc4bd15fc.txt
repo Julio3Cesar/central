@@ -1,0 +1,22 @@
+Host de FTP: ftp.vbarquiteturainteriores.com.br
+
+
+Usuário de FTP: vbarquiteturainterio
+
+
+Senha de FTP: Senai115
+
+
+
+=======================================
+WordPress
+
+
+
+http://www.vbarquiteturainteriores.com.br/wp-admin
+
+
+
+User: thiago.pimentel
+
+Senha: Welcome100%

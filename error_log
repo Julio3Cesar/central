@@ -1,0 +1,87 @@
+[04-Mar-2018 13:24:49 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:24:50 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:24:54 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:24:55 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:24:58 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:24:58 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:29:20 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:29:21 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:30:01 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:30:12 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:30:24 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[04-Mar-2018 13:30:25 America/Chicago] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websi419_central.core' doesn't exist' in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`core`')
+#3 /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connection->columns('`core`')
+#4 /home/websi419/public_html/central/spa in /home/websi419/public_html/central/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
+[28-Sep-2018 11:37:25 America/Chicago] PHP Parse error:  syntax error, unexpected '301' (T_LNUMBER) in /home/websi419/public_html/central/application/controllers/register.php on line 2
+[28-Sep-2018 11:38:58 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/websi419/public_html/central/application/controllers/register.php on line 3
+[28-Sep-2018 11:40:18 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/websi419/public_html/central/application/controllers/register.php on line 2
