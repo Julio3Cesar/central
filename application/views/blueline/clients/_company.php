@@ -12,7 +12,7 @@ echo form_open_multipart($form_action, $attributes);
 
 <div class="form-group">
         <label for="reference"><?=$this->lang->line('application_reference_id');?> *</label>
-        <input id="reference" type="text" name="reference" class="required form-control"  value="<?php if(isset($client)){echo $client->id;} else{ echo $core_settings->client_reference; } ?>"   readonly="readonly"  />
+        <input id="reference" type="text" name="reference" class="required form-control"  value="<?php if(isset($client)){echo $client->id;} ?>"   readonly="readonly"  />
 </div>
 
 <div class="form-group">

@@ -287,17 +287,11 @@ class Clients extends MY_Controller
         }
         break;
       case 'delete':
-        $company           = Company::find($id);
-        $company->inactive = '1';
-        $company->save();
-        foreach ($company->clients as $value)
-        {
-          $client           = Client::find($value->id);
-          $client->inactive = '1';
-          $client->save();
-        }
+        $client           = Client::find($id);
+        $client->inactive = '1';
+        $client->save();
         $this->content_view = 'clients/all';
-        if (!$company)
+        if (!$client)
         {
           $this->session->set_flashdata('message', 'error:' . $this->lang->line('messages_delete_company_error'));
         }
