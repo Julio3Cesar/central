@@ -115,6 +115,22 @@ echo form_open_multipart($form_action, $attributes);
         <label for="command_phone"><?=$this->lang->line('application_command_phone');?></label>
       <input id="command_phone" type="text" name="command_phone" class="form-control" value="<?php if(isset($client)){echo $client->command_phone;}?>" />
   </div>
+            <div class="form-group">
+                <label for="command_board"><?=$this->lang->line('application_command_board');?></label>
+                <input id="command_board" type="text" name="command_board" class="form-control" value="<?php if(isset($client)){echo $client->command_board;}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_state"><?=$this->lang->line('application_command_state');?></label>
+                <input id="command_state" type="text" name="command_state" class="form-control" value="<?php if(isset($client)){echo $client->command_state;}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_entry_date"><?=$this->lang->line('application_command_entry_date');?></label>
+                <input id="command_entry_date" type="text" name="command_entry_date" class="form-control" value="<?php if(isset($client)){echo $client->command_entry_date;}?>" />
+            </div>
+            <div class="form-group">
+                <label for="command_comments"><?=$this->lang->line('application_command_comments');?></label>
+                <textarea id="command_comments" rows="5" name="command_comments" class="form-control" value="<?php if(isset($client)){echo $client->command_comments;}?>"></textarea>
+            </div>
 <div class="modal-footer">
   <input type="submit" name="send" class="btn btn-primary" value="<?=$this->lang->line('application_save');?>"/>
   <a class="btn" data-dismiss="modal"><?=$this->lang->line('application_close');?></a>

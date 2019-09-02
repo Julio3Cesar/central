@@ -12,7 +12,7 @@
               <li><span><?=$this->lang->line('application_company_name');?>:</span>
                  <?php if($client->firstname){ echo $client->firstname.' '.$client->lastname;}else{echo "-";} ?></li>
               <li><span><?=$this->lang->line('application_email');?>:</span>
-                 <?php if(isset($client->email)){ echo $client->email; }else{ echo "-"; } ?></li>
+                 <?php if($client->email){ echo $client->email; }else{ echo "-"; } ?></li>
               <li><span><?=$this->lang->line('application_phone');?>:</span>
                  <?php echo $client->phone = empty($client->phone) ? "-" : $client->phone; ?></li>
                <?php if($client->company->vat != ""){?>
@@ -38,12 +38,12 @@
                  <?php if($client->district){ echo $client->district; }else{ echo "-"; } ?></li>
               <li><span><?=$this->lang->line('application_complement');?>:</span>
                  <?php if($client->complement){ echo $client->complement; }else{ echo "-"; } ?></li>
+               <li><span><?=$this->lang->line('application_address');?>:</span>
+                  <?php echo $client->address = empty($client->address) ? "-" : $client->address; ?></li>
 
             </ul>
             <span class="visible-xs"></span>
             <ul class="details col-md-6">
-               <li><span><?=$this->lang->line('application_address');?>:</span>
-                  <?php echo $client->address = empty($client->address) ? "-" : $client->address; ?></li>
                <li><span><?=$this->lang->line('application_zip_code');?>:</span>
                   <?php echo $client->zipcode = empty($client->zipcode) ? "-" : $client->zipcode; ?></li>
                <li><span><?=$this->lang->line('application_city');?>:</span>
@@ -51,6 +51,9 @@
                <li><span><?=$this->lang->line('application_province');?>:</span>
                   <?php echo $client->company->province = empty($client->company->province) ? "-" : $client->company->province; ?></li>
 
+              <li><span><b><?=$this->lang->line('application_command_information');?></b></span></li>
+              <li><span><?=$this->lang->line('application_is_he_active');?></span>
+                 <?php if($client->is_active == 1){ echo "SIM"; }else{ echo "NÃO"; } ?></li>
               <li><span><?=$this->lang->line('application_command');?>:</span>
                  <?php if($client->command){ echo $client->command; }else{ echo "-"; } ?></li>
               <li><span><?=$this->lang->line('application_command_city');?>:</span>

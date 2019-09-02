@@ -318,6 +318,7 @@ $lang['application_add_new_company'] = "Adicionar novo sócio";
 $lang['application_edit_company'] = "Editar sócios";
 $lang['application_firstname'] = "Nome";
 
+$lang['application_command_information'] = "Informações do Comando";
 $lang['application_command'] = "Comando";
 $lang['application_command_city'] = "Cidade";
 $lang['application_command_opm'] = "OPM";

@@ -221,14 +221,29 @@ class Clients extends MY_Controller
         {
           unset($_POST['send']);
           $_POST                 = array_map('htmlspecialchars', $_POST);
-          $company               = Company::create($_POST);
-          $companyid             = Company::last();
-          $new_company_reference = $_POST['reference'] + 1;
-          $company_reference     = Setting::first();
-          $company_reference->update_attributes(array(
-            'company_reference' => $new_company_reference
-          ));
-          if (!$company)
+        $company_attr['name']             = $_POST['firstname'].' '.$_POST['lastname'];
+        $company_attr['phone']            = $_POST['phone'];
+        $company_attr['mobile']           = $_POST['mobile'];
+        $company_attr['address']          = $_POST['address'];
+        $company_attr['zipcode']          = $_POST['zipcode'];
+        $company_attr['city']             = $_POST['city'];
+        $company_attr['province']         = $_POST['province'];
+        $company_attr['vat']              = $_POST['vat'];
+        $company = Company::create($company_attr);
+          unset($_POST['province']);
+          unset($_POST['vat']);
+          $client = Client::create($_POST);
+          $client->company_id = $company->id;
+          $company->client_id = $client->id;
+          $client->save();
+          $company->save();
+          # $companyid             = Company::last();
+          # $new_company_reference = $_POST['reference'] + 1;
+          # $company_reference     = Setting::first();
+          # $company_reference->update_attributes(array(
+          #  'company_reference' => $new_company_reference
+          # ));
+          if (!$client)
           {
             $this->session->set_flashdata('message', 'error:' . $this->lang->line('messages_company_add_error'));
           }
@@ -236,17 +251,10 @@ class Clients extends MY_Controller
           {
             $this->session->set_flashdata('message', 'success:' . $this->lang->line('messages_company_add_success'));
           }
-          redirect('clients/view/' . $companyid->id);
+          redirect('clients/view/' . $client->id);
         }
         else
         {
-          $this->view_data['clients']        = Company::find('all', array(
-            'conditions' => array(
-              'inactive=?',
-              '0'
-            )
-          ));
-          $this->view_data['next_reference'] = Company::last();
           $this->theme_view                  = 'modal';
           $this->view_data['title']          = $this->lang->line('application_add_new_company');
           $this->view_data['form_action']    = 'clients/company/create';
