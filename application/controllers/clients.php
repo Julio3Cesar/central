@@ -266,11 +266,9 @@ class Clients extends MY_Controller
           $_POST   = array_map('htmlspecialchars', $_POST);
           $client = Client::find($id);
           $company = $client->company;
-          $company->country = $_POST['country'];
           $company->province = $_POST['province'];
           $company->vat = $_POST['vat'];
           $company->save();
-          unset($_POST['country']);
           unset($_POST['province']);
           unset($_POST['vat']);
           $client->update_attributes($_POST);

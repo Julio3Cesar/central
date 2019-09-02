@@ -4,7 +4,7 @@
  * @copyright   By Luxsys (http://www.luxsys-apps.com)
  * @version     2.2.0
  */
- 
+
 body{
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     background: #D8DCE3;
@@ -26,18 +26,18 @@ body{
     {
         background: #25282A !important;
     }
-    
+
     /* Primary border color */
-    
-    
-    
+
+
+
     /* Primary color */
     .menu-trigger,
     .btn-option:hover
 	{
         color:#11A7DB;
     }
-    
+
     /* Default border color  */
 
     .table-head, #main .action-bar, #message .header {
@@ -47,12 +47,12 @@ body{
 		margin-top: 15px;
 		padding: 10px 0 0 !important;
 	}
-	.progress-bar { 
+	.progress-bar {
 		background-color:#11A7DB;
 	}
 	/* Login Page Colors */
 		body.login, body.install {
-			 background: url(../images/background.jpg) no-repeat center center fixed; 
+			 background: url(../images/background.jpg) no-repeat center center fixed;
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
@@ -78,12 +78,12 @@ body{
 		    margin-bottom:20px;
 		    text-align: center;
 		}
-		
+
 
 
 	/* Login Page Colors End */
 
-    
+
     /* BUTTON Colors */
         .btn-option{
             color:#505458;
@@ -138,14 +138,14 @@ body{
         .btn-danger:hover{
             background:#e84a47;
         }
-        
+
 
         .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
 			background-color: #11A7DB;
 			border-color: transparent;
 		}
     /* BUTTON Colors End */
-    
+
 	/* Main Page Colors */
 		.mainnavbar {
 			background: #ffffff;
@@ -153,10 +153,10 @@ body{
 
 		}
 		.main{
-		    
+
 		}
-		.table .progress .bar{ 
-		    
+		.table .progress .bar{
+
 		   }
 		   .list-group-item{
 		   	font-weight: 600 !important;
@@ -199,7 +199,7 @@ body{
 		.sidebar h4 {
 			color:#ffffff;
 		}
-		
+
 		.nav.nav-sidebar>li.active>a{
 			padding: 13px 15px 13px 15px;
 			margin-left: -15px;
@@ -207,12 +207,12 @@ body{
 			background-image: linear-gradient(to right, #11A7DB 0%, #33C3DA 100%);
 
 			}
-			.nav.nav-sidebar>li.active>a, 
-			.modal-header, 
+			.nav.nav-sidebar>li.active>a,
+			.modal-header,
 			.ui-slider-range,
     		.ui-slider-handle:before,
-    		.list-group-item.active, 
-    		.list-group-item.active:hover, 
+    		.list-group-item.active,
+    		.list-group-item.active:hover,
     		.list-group-item.active:focus,
     		input.labelauty:checked + label,
     		.icon-frame
@@ -280,7 +280,7 @@ body{
 		.ui-slider-disabled .ui-slider-range {
 			background: #DDD !important; /* slider range bar disable color */
 		}
-		.ui-slider-disabled .ui-slider-handle:before { 
+		.ui-slider-disabled .ui-slider-handle:before {
 			background: #DDD !important; /* slider button disable color */
 		}
 		.chosen-container .chosen-results li.highlighted {
@@ -316,7 +316,7 @@ body{
 		    color:#EAAA10;
 		    border:1px solid #EAAA10 ;
 		}
-		.label-chilled{ 
+		.label-chilled{
 			color: #B361FF;
   			border: 1px solid #B361FF;
 		}
@@ -341,7 +341,7 @@ body{
 		    border-color: #1cbce8;
 		}
 
-		a.label.label-chilled:hover{ 
+		a.label.label-chilled:hover{
 			color: #9626FF;
   			border: 1px solid #9626FF;
 		}
@@ -351,7 +351,7 @@ body{
 			background-color: #43AC6E;
 			border-color: #43AC6E;
 		}
-		
+
 		ul.todo li.priority1{
 		    box-shadow: -4px 0 0 #61c775;
 		}
@@ -372,7 +372,7 @@ body{
 		}
 		h1, .h1, h2, .h2, h3, .h3 {
 		    /* -webkit-font-smoothing: antialiased; */
-		    
+
 			font-family: "Open Sans";
 			font-weight: 600;
 			color: #505458;
@@ -404,14 +404,14 @@ body{
 		background: none;
 		}
 		.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-		cursor:	default; 
+		cursor:	default;
 		background-color: #FFF;
 		}
 		.btn-xs{
             font-size:10px !important;
         }
         .no-padding{
-         padding:0 !important;   
+         padding:0 !important;
         }
         .dropdown-menu li:first-child{
         	margin-top: -5px;
@@ -512,7 +512,7 @@ body{
 		    width:200px;
 		    position:absolute;
 		    z-index: 1;
-		    
+
 		}
 		.popover-title {
 		padding: 6px 14px;
@@ -559,7 +559,7 @@ body{
             margin-left: 5px;
 		}
 		.btn {
-		    
+
 			border-radius:3px;
 		    border: 0;
 		    font-weight: 600 !important;
@@ -571,7 +571,7 @@ body{
 		    border-radius: 50px!important;
 		    margin-left: 5px!important;
 
-				
+
 
 		}
 		.btn:hover{
@@ -726,7 +726,7 @@ body{
 		 }
 		 .topbar span a:hover{
 		    color:#00b3ff;
-		    
+
 		    }
 		 .topbar-userpic{
 		 	    margin-right: -12px;
@@ -784,12 +784,12 @@ body{
 		ul.navbar-nav li.profile-button ul.navbar-nav-sub li:hover {
 			background-color:rgba(0, 0, 0, 0.1);
 		}
-		
+
 		ul.navbar-nav li.profile-button ul.navbar-nav-sub li a{
 			font-weight: 300;
 			letter-spacing: 1px;
 			font-size: 11px;
-			line-height: 20px;	
+			line-height: 20px;
 			color: #FFF;
 		}
 		ul.navbar-nav li.profile-button ul.navbar-nav-sub li a:hover{
@@ -869,14 +869,14 @@ body{
 			-webkit-box-shadow: none;
 			box-shadow: none;
 		}
-		.table .progress{ 
+		.table .progress{
 		    background: #E6E6E6;
 		    margin: 8px 0 0;
         }
         .table .progress.progress-success .bar, .progress-bar.done{
 		background: #43AC6E !important;
 		}
-		.table .progress .bar{ 
+		.table .progress .bar{
             height: 4px;
         }
 		.truncate{
@@ -921,7 +921,7 @@ body{
 			font-weight: 400;
 			letter-spacing: 1px;
 			font-size: 11px;
-			line-height: 25px;	
+			line-height: 25px;
 		}
 		.submenu ul li a:hover{
 			text-decoration: none;
@@ -935,7 +935,7 @@ body{
 		}
 		.menu-sub .timer{
 			margin:0 3px;
-			
+
 		}
 		ul.user-online li p.truncate{
 			margin: 0px;
@@ -1005,7 +1005,7 @@ body{
 			width:200px;
 			left:0px;
 			}
-	
+
 		.content-area{
 		    margin-left:0px;
 		}
@@ -1174,7 +1174,7 @@ body{
 		.chosen-container-single .chosen-search input[type="text"] {
 			border: 1px solid #dedede;
 		}
-		
+
 
 /* ----- Forms End ----- */
 
@@ -1182,11 +1182,11 @@ body{
 
 		.note-editor {
 			border: 0px solid #e5e9ec;
-		
+
 		}
 		.form-group .note-editor {
 		border: 1px solid #e5e9ec;
-		
+
 		}
 		.note-editor .btn-sm, .note-editor .btn-xs {
 			border-radius: 3px;
@@ -1250,7 +1250,7 @@ body{
 			font-size: 12px;
 			font-weight: 600;
 			letter-spacing: 0.6px;
-			
+
 			text-transform:uppercase;
 			font-family: "Open Sans";
 		}
@@ -1276,7 +1276,7 @@ body{
 		.table.noclick tr td{
 			cursor:default !important;
 			}
-			
+
 		.table>thead>tr>th {
             border-bottom: 2px solid #EEE;
         }
@@ -1302,7 +1302,7 @@ body{
             -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
             -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
             transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-            
+
             background-image: url("../images/search-icon.png");
             background-repeat: no-repeat;
             background-position: 0 50%;
@@ -1312,7 +1312,7 @@ body{
             background-clip: border-box;
             -webkit-background-size: auto auto;
             background-size: auto auto;
-            
+
 		}
 		div.dataTables_filter input:focus {
 
@@ -1342,7 +1342,7 @@ body{
         .dataTables_paginate li.paginate_button.previous.disabled a, .dataTables_paginate li.paginate_button.next.disabled a{
             color: #DDD;
 			border: 0;
-            
+
         }
         .dataTables_paginate li.paginate_button a {
             height: 25px;
@@ -1361,7 +1361,7 @@ body{
             color:#11A7DB;
             border:0;
         }
-        
+
 		.paginate_disabled_previous, .paginate_disabled_next, a.paginate_disabled_previous:hover, a.paginate_disabled_next:hover {
 			display: inline-block;
 			margin-bottom: 0;
@@ -1402,11 +1402,11 @@ body{
 
 		.minus{
 			  color: rgb(255, 60, 60);
-  			  
+
 		}
 		.plus{
 			  color: #43AC6E;
-  			  
+
 		}
 		.bold{
 			 font-weight: 600;
@@ -1477,7 +1477,7 @@ body{
 
 
 		.tile-row .nav-tabs>li {
-		  margin-bottom: 0px; 
+		  margin-bottom: 0px;
 
 		}
 		.tile-row .nav-tabs>li.active>a{
@@ -1551,7 +1551,7 @@ body{
 			  background-color: #D43F3A;
 			  border-radius: 30px;
 		 }
-		  
+
 		.tile h1 {
 			color:#505458;
 			font-size: 17px;
@@ -1582,7 +1582,7 @@ body{
 		.stdpad{
             width: 100%;
             height:300px;
-            
+
             font-size: 13px;
             font-weight: 300;
             background: #FFFFFF;
@@ -1636,7 +1636,7 @@ body{
 			padding-right: 10px;
 		}
 		.stdpad-small .stats.two{
-			padding-top: 10px;	
+			padding-top: 10px;
 		}
 		.stdpad-small .stats.two .number{
 			padding-top: 4px;
@@ -1653,7 +1653,7 @@ body{
             border-bottom: 1px solid #EEE;
             color: #000000;
             font-weight: 400;
-			
+
 		}
 		.stdpad .label{
 			border:0px !important;
@@ -1686,7 +1686,7 @@ body{
 		ul.todo li{
 			line-height: 22px;
 		}
-		
+
 		.stdpad ul.todo input[type=checkbox]+.lbl, .stdpad input[type=radio]+.lbl {
             width: calc(100% - 60px);
             width: -moz-calc(100% - 60px);
@@ -1716,7 +1716,7 @@ body{
 			margin-bottom: 2px;
 		}
 		ul.dash-messages li small{
-			
+
 		}
 		ul.dash-messages li span{
 			font-size: 12px;
@@ -1755,7 +1755,7 @@ body{
 /* ----- Messages ----- */
 
         .note-editable{
-            background:#FFFFFF;   
+            background:#FFFFFF;
         }
         .message{
             background:#FFFFFF;
@@ -1776,7 +1776,7 @@ body{
 			text-align: center;
 			border-right: 1px solid #dedede;
 			text-transform: uppercase;
-		
+
 		} */
 		.message-list-header span{
 		    display:none;
@@ -1784,7 +1784,7 @@ body{
 		.message-list-footer{
 		    height: 27px;
             background: #F7F7F7;
-		    
+
 		}
 		.message-list-menu{
 			height:30px;
@@ -1793,7 +1793,7 @@ body{
 			font-weight: 300;
 			border-right: 1px solid #dedede;
 			background: #9b9b9b;
-			
+
 		}
 
 		.message-list .mCSB_container {
@@ -1866,7 +1866,7 @@ body{
             display: none;
             right: 0;
             margin-top: -23px;
-		    
+
 		}
 		.message-list ul li.New:hover a.message-list-delete, .message-list ul li.Read:hover a.message-list-delete, .message-list ul li.Replied:hover a.message-list-delete, .message-list ul li.Marked:hover a.message-list-delete, .message-list ul li.Read:hover a.message-list-delete{
 		    display:block;
@@ -1903,7 +1903,7 @@ body{
             font-weight: bold;
             float: right;
 		}
-		
+
 		.message-content-header-sub{
 			margin: 5px 15px;
 			font-size: 13px;
@@ -1942,7 +1942,7 @@ body{
 			padding: 15px;
 			display: none;
 			opacity: 0;
-			
+
 		}
 		.message-container .userpic{
 			width:18px;
@@ -1980,7 +1980,7 @@ body{
         }
         .preview{
             padding:15px;
-            
+
         }
         .preview img{
             max-width:100%;
@@ -1988,7 +1988,7 @@ body{
         .details li span{
             font-weight: 300;
 			padding-right: 10px;
-			min-width: 120px;
+			min-width: 190px;
 			display: inline-block;
 			padding-left: 5px;
         }
@@ -2023,7 +2023,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 			margin-top: 0px;
 			margin-right: 10px;
 		}
-		
+
 		.stdpad ul.todo li{
 		    padding:11px 0 0;
 		    margin:0 15px;
@@ -2074,7 +2074,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 		}
 		ul.todo li.done .lbl p{
 			color:#DDD;
-			
+
 		}
 		ul.todo li .lbl p{
 			padding-left: 10px;
@@ -2090,7 +2090,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 		ul.todo li .list-profile-img{
 			margin-right: 10px;
 			height: 21px;
-			
+
 		}
 		ul.todo input[type=checkbox]+.lbl, input[type=radio]+.lbl {
 		width: calc(100% - 125px);
@@ -2133,7 +2133,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
         }
         .option{
             padding-right:5px !important;
-            
+
             text-align:center;
         }
 		.timeline {
@@ -2383,7 +2383,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 			.timeline .open-comment-box{
 				cursor: pointer;
 			}
-			
+
 			.timeline #timeline-comment{
 				display: none;
 				opacity: 0;
@@ -2405,7 +2405,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 					display: inline-block;
 				}
 				.btn {
-					
+
 				}
 
 				.row{
@@ -2434,10 +2434,10 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 				.dashboard-chart{
 					padding: 15px;
 				}
-				
+
 				ul.todo li {
 				    padding:0;
-				    
+
 				}
 				.stdpad ul.todo input[type=checkbox]+.lbl, .stdpad input[type=radio]+.lbl {
                     width: calc(100% - 90px);
@@ -2448,7 +2448,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
                     padding-left: 5px;
                     width: 80% !important;
                  }
-                
+
 				    ul.timeline:before {
 				        left: 40px;
 				        display: none;
@@ -2493,9 +2493,9 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 		        }
 			}
 
-	.tab-content{ 
+	.tab-content{
 	 	margin-top: -15px;
-	}	
+	}
 
 
 /* ----- Project view End -----*/
@@ -2503,7 +2503,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 
 
 /* ----- Ticket single page ----- */
-		
+
 		.ticket-details{
 			list-style: none;
 			padding-left: 15px;
@@ -2511,7 +2511,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 			padding-bottom: 15px;
 
 		}
-		
+
 		.ticket-details li{
 			line-height: 25px;
 			font-weight: 600;
@@ -2522,7 +2522,7 @@ transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1) 100ms;
 			font-size: 14px;
 			display: block;
 			margin: 11px 0 3px;
-			
+
 		}
 
 		.article-content{
@@ -2668,7 +2668,7 @@ p.subline{
 
 	.table-head .pull-right .dropdown-toggle {
 		margin-top: 11px;
-		
+
 	}
 	.table-head .pull-right .dropdown-menu{
 		text-transform: none;
@@ -2686,7 +2686,7 @@ p.subline{
 
 	}
 	.template_container img{
-		
+
 	}
 	.template_container_bottom{
 		  padding: 5px 10px;
@@ -2824,7 +2824,7 @@ padding-bottom:20px;
 a.cke_button {
 	height: 25px !important;
 }
-.cke_toolgroup, .cke_combo_button { 
+.cke_toolgroup, .cke_combo_button {
 	background:#FFFFFF !important;
 	background-image: none !important;
 }
@@ -2838,13 +2838,13 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
 	background-image: none !important;
 }
 
-/* ----- Login Page ----- */ 
+/* ----- Login Page ----- */
 
 		.login .logo{
 			text-align: center;
 			padding: 15px;
 			margin: -25px -30px 15px;
-			
+
 		}
 		.login .logo img{
 			max-width: 300px;
@@ -2938,8 +2938,8 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
 			  text-align: center;
   			  color: #888;
 		}
-        
-/* ----- Login Page Styles End  ----- */ 
+
+/* ----- Login Page Styles End  ----- */
 
 
 
@@ -2967,7 +2967,7 @@ background-color: #15B9EF;
 }
 .install-content{
 	background: #FFFFFF;
-	padding:20px; 
+	padding:20px;
 }
 
 .install .nav-pills>li>a {
