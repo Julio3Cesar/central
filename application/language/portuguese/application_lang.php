@@ -329,6 +329,7 @@ $lang['application_command_entry_date'] = "Data de Ingresso";
 $lang['application_comments'] = "Observações";
 
 $lang['application_i_am_active'] = "Estou ativo";
+$lang['application_is_he_active'] = "Está ativo?";
 $lang['application_lastname'] = "Sobrenome";
 $lang['application_functional_id'] = "ID Funcional";
 $lang['application_authenticity_code'] = "Código de Autenticidade";

@@ -31,7 +31,12 @@ class Clients extends MY_Controller
   }
   function index()
   {
-    $this->view_data['clients'] = Client::find('all');
+    $this->view_data['clients'] = Client::find('all', array(
+      'conditions' => array(
+        'inactive=?',
+        '0'
+      )
+    ));
     $this->content_view           = 'clients/all';
   }
   function create($company_id = FALSE)
@@ -274,7 +279,7 @@ class Clients extends MY_Controller
         }
         else
         {
-          $this->view_data['company']     = Company::find($id);
+          $this->view_data['client']      = Client::find($id);
           $this->theme_view               = 'modal';
           $this->view_data['title']       = $this->lang->line('application_edit_company');
           $this->view_data['form_action'] = 'clients/company/update';
