@@ -264,10 +264,17 @@ class Clients extends MY_Controller
             unset($_POST['view']);
           }
           $_POST   = array_map('htmlspecialchars', $_POST);
-          $company = Company::find($id);
-          unset($_POST['is_active']);
-          $company->update_attributes($_POST);
-          if (!$company)
+          $client = Client::find($id);
+          $company = $client->company;
+          $company->country = $_POST['country'];
+          $company->province = $_POST['province'];
+          $company->vat = $_POST['vat'];
+          $company->save();
+          unset($_POST['country']);
+          unset($_POST['province']);
+          unset($_POST['vat']);
+          $client->update_attributes($_POST);
+          if (!$client)
           {
             $this->session->set_flashdata('message', 'error:' . $this->lang->line('messages_save_company_error'));
           }

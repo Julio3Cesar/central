@@ -11,13 +11,13 @@ echo form_open_multipart($form_action, $attributes);
 <?php } ?>
 
 <div class="form-group">
-        <label for="reference"><?=$this->lang->line('application_reference_id');?> *</label>
-        <input id="reference" type="text" name="reference" class="required form-control"  value="<?php if(isset($client)){echo $client->id;} ?>"   readonly="readonly"  />
+        <label for="id"><?=$this->lang->line('application_reference_id');?> *</label>
+        <input id="id" type="text" name="id" class="required form-control"  value="<?php if(isset($client)){echo $client->id;} ?>"   readonly="readonly"  />
 </div>
 
 <div class="form-group">
-        <label for="name"><?=$this->lang->line('application_company');?> <?=$this->lang->line('application_name');?> *</label>
-        <input id="name" type="text" name="name" class="required form-control" value="<?php if(isset($client)){echo $client->firstname;} ?>"  required/>
+        <label for="firstname"><?=$this->lang->line('application_company');?> <?=$this->lang->line('application_name');?> *</label>
+        <input id="firstname" type="text" name="firstname" class="required form-control" value="<?php if(isset($client)){echo $client->firstname;} ?>"  required/>
 </div>
 <div class="form-group">
   <label for="is_active"><?=$this->lang->line('application_is_he_active');?></label>
