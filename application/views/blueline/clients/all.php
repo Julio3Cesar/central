@@ -10,6 +10,7 @@
 
 			<th class="hidden-xs" style="width:70px"><?=$this->lang->line('application_functional_id');?></th>
 			<th><?=$this->lang->line('application_company_name');?></th>
+			<th><?=$this->lang->line('application_is_he_active');?></th>
 			<th class="hidden-xs"><?=$this->lang->line('application_primary_contact');?></th>
 			<th class="hidden-xs"><?=$this->lang->line('application_email');?></th>
 			<th><?=$this->lang->line('application_action');?></th>
@@ -18,6 +19,7 @@
 
                   <tr  id="<?=$value->id;?>" ><td class="hidden-xs" style="width:70px"><?php if(isset($value->functional_id)){ echo $value->functional_id;} ?></td>
 			<td><span class="label label-info"><?php if(isset($value->firstname)){echo $value->firstname . " " . $value->lastname;} else{echo $this->lang->line('application_no_company_assigned'); }?></span></td>
+			<td><span class="hidden-xs"><?php if($value->is_active == 1){echo "SIM";} else{echo "NÃO"; }?></span></td>
 			<td class="hidden-xs"><?php if(isset($value->phone)){ echo $value->phone;}else{ echo $this->lang->line('application_no_contact_assigned');} ?></td>
 			<td class="hidden-xs"><?php if(isset($value->email)){ echo $value->email;}else{ echo $this->lang->line('application_no_contact_assigned');}?></td>
 			<td class="option" width="8%">
