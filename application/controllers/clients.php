@@ -29,6 +29,50 @@ class Clients extends MY_Controller
       redirect('login');
     }
   }
+  function export()
+  {
+     header('Content-Type: text/csv; charset=utf-8');
+     header('Content-Disposition: attachment; filename=data.csv');
+     $output = fopen("php://output", "r+");
+     fputcsv($output, array('Id', 'Nome', 'Id Funcional', 'Código de Autenticidade', 'Posto', 'Data de Nascimento', 'CPF / CPNJ', 'Rg', 'Email', 'Telefone', 'Celular', 'Endereço Residencial', 'Cliente ativo?', 'Comando', 'Endereço do Comando', 'OPM', 'Telefone do Comando', 'Quadro', 'Data de Ingresso', 'Comentários'));
+
+     if(isset($_POST["export-all"]))
+     {
+        $clients = Client::find('all', array(
+          'conditions' => array(
+            'inactive=?',
+            '0'
+          )
+        ));
+     }
+
+     if(isset($_POST["export-active"]))
+     {
+        $clients = Client::find('all', array(
+          'conditions' => array(
+            'is_active=? AND inactive=?',
+            '1', '0'
+          )
+        ));
+     }
+
+     if(isset($_POST["export-inactive"]))
+     {
+        $clients = Client::find('all', array(
+          'conditions' => array(
+            'is_active=? AND inactive=?',
+            '0', '0'
+          )
+        ));
+     }
+
+     foreach($clients as $client)
+     {
+        fputcsv($output, $client->toArray());
+     }
+     fclose($output);
+     $this->content_view = 'clients/export';
+  }
   function index()
   {
     $this->view_data['clients'] = Client::find('all', array(

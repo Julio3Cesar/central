@@ -1,7 +1,12 @@
 <div class="col-sm-12  col-md-12 main">
-		<div class="row">
-			<a href="<?=base_url()?>clients/company/create" class="btn btn-primary" data-toggle="mainmodal"><?=$this->lang->line('application_add_new_company');?></a>
-		</div>
+            <div class="row">
+              <form method="post" class="form-inline" align="right" action="clients/export">
+                <a href="<?=base_url()?>clients/company/create" class="btn btn-primary" data-toggle="mainmodal"><?=$this->lang->line('application_add_new_company');?></a>
+                <input type="submit" name="export-all" value="Exportar Todos" class="btn btn-success" />
+                <input type="submit" name="export-active" value="Exportar Ativos" class="btn btn-success" />
+                <input type="submit" name="export-inactive" value="Exportar Inativos" class="btn btn-success" />
+              </form>
+            </div>
 		<div class="row">
 		<div class="table-head"> <?=$this->lang->line('application_companies');?></div>
 		<div class="table-div">
@@ -19,7 +24,7 @@
 
                   <tr  id="<?=$value->id;?>" ><td class="hidden-xs" style="width:70px"><?php if(isset($value->functional_id)){ echo $value->functional_id;} ?></td>
 			<td><span class="label label-info"><?php if(isset($value->firstname)){echo $value->firstname . " " . $value->lastname;} else{echo $this->lang->line('application_no_company_assigned'); }?></span></td>
-			<td><span class="hidden-xs"><?php if($value->is_active == 1){echo "SIM";} else{echo "NÃO"; }?></span></td>
+			<td><span class="hidden-xs"><?php if($value->is_active == 1){echo "Sim";} else{echo "Não"; }?></span></td>
 			<td class="hidden-xs"><?php if(isset($value->phone)){ echo $value->phone;}else{ echo $this->lang->line('application_no_contact_assigned');} ?></td>
 			<td class="hidden-xs"><?php if(isset($value->email)){ echo $value->email;}else{ echo $this->lang->line('application_no_contact_assigned');}?></td>
 			<td class="option" width="8%">
