@@ -277,6 +277,23 @@ class Clients extends MY_Controller
           unset($_POST['province']);
           unset($_POST['vat']);
           $client = Client::create($_POST);
+          $client->hashed_password = $client->functional_id;
+          $modules                  = Module::find('all', array(
+            'order' => 'sort asc',
+            'conditions' => array(
+              'type = ?',
+              'client'
+            )
+          ));
+          $client_access = "";
+          foreach ($modules as $value)
+          {
+            if ($value->name == "Projects" || $value->name == "Messages" || $value->name == "Tickets" || $value->name == "Invoices")
+            {
+              $client_access .= $value->id . ",";
+            }
+          }
+          $client->access = $client_access;
           $client->company_id = $company->id;
           $company->client_id = $client->id;
           $client->save();

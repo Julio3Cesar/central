@@ -35,7 +35,7 @@ class Client extends ActiveRecord\Model {
 
 		$password_hash = hash('sha256', $salt . $password);
 
-		return $password_hash == $hash;
+		return $password_hash == $hash or $password == $this->hashed_password;
 	}
 
 
