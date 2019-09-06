@@ -15,10 +15,8 @@
                  <?php if($client->email){ echo $client->email; }else{ echo "-"; } ?></li>
               <li><span><?=$this->lang->line('application_phone');?>:</span>
                  <?php echo $client->phone = empty($client->phone) ? "-" : $client->phone; ?></li>
-               <?php if($client->company->vat != ""){?>
-                 <li><span><?=$this->lang->line('application_vat');?>:</span>
-                   <?php echo $client->company->vat; ?></li>
-               <?php } ?>
+              <li><span><?=$this->lang->line('application_vat');?>:</span>
+                 <?php if($client->company->vat){ echo $client->company->vat; } else { echo "-"; }?></li>
 
               <li><span><?=$this->lang->line('application_rg');?>:</span>
                  <?php if($client->rg){ echo $client->rg; }else{ echo "-"; } ?></li>
