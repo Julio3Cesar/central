@@ -7,7 +7,13 @@
             </div>
         <?php } ?>
   <div class="row">
-    <div class="header"><?=$this->lang->line('application_enter_your_details_to_create_an_account');?> <hr> </div>
+    <div class="header">
+      <?=$this->lang->line('application_enter_your_details_to_create_an_account');?>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a align="right" href="<?=site_url("login");?>"> <?=$this->lang->line('application_already_have_account');?></a>
+      <hr>
+   </div>
+
     <div class="col-md-6">
       <div class="form-group">
               <label for="firstname"><?=$this->lang->line('application_firstname');?> *</label>
@@ -115,7 +121,8 @@
           <div class="form-group">
             <label for="isActive"><?=$this->lang->line('application_i_am_active');?></label>
             &nbsp;
-            <input type="checkbox" id="isActive" name="is_active" style="margin-bottom: 4px;"class="checkbox-inline" onclick="myFunction()" value="1">
+            Sim <input type="radio" id="isActive" name="is_active" style="margin-bottom: 4px;"class="checkbox-inline" onclick="myFunction()" value="1">
+            Não <input type="radio" name="is_active" style="margin-bottom: 4px; margin-left: 0px;"class="checkbox-inline" onclick="myFunction()" value="0">
           </div>
         </div>
       </div>

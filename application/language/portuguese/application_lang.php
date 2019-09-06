@@ -259,6 +259,7 @@ $lang['application_credentials_mail_body'] = "Corpo do Email credenciais";
 $lang['application_download_counter'] = "Contador Descargas";
 $lang['application_reset_password'] = "Redefinir a senha";
 $lang['application_go_to_login'] = "Ir para login";
+$lang['application_already_have_account'] = "Já tenho cadastro";
 $lang['application_forgot_password'] = "Esqueceu sua senha?";
 $lang['application_identify_account'] = "Para redefinir sua senha, por favor, primeiro identificar a sua conta.";
 $lang['application_notification_new_message_subject'] = "Nova Mensagem";
@@ -329,7 +330,7 @@ $lang['application_command_state'] = "Estado";
 $lang['application_command_entry_date'] = "Data de Ingresso";
 $lang['application_comments'] = "Observações";
 
-$lang['application_i_am_active'] = "Estou ativo";
+$lang['application_i_am_active'] = "Está ativo na função?";
 $lang['application_is_he_active'] = "Está ativo?";
 $lang['application_lastname'] = "Sobrenome";
 $lang['application_functional_id'] = "ID Funcional";

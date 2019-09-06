@@ -56,7 +56,7 @@ class Register extends MY_Controller
         $client_attr['address_number']     = $_POST['address_number'];
         $client_attr['district']     = $_POST['district'];
         $client_attr['complement']     = $_POST['complement'];
-        if ($_POST['is_active'] == null)
+        if ($_POST['is_active'] == 0 )
         {
           $client_attr['is_active']     = 0;
         }
